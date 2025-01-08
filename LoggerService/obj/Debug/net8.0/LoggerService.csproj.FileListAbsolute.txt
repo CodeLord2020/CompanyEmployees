@@ -1,0 +1,15 @@
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\LoggerService\bin\Debug\net8.0\LoggerService.deps.json
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\LoggerService\bin\Debug\net8.0\LoggerService.dll
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\LoggerService\bin\Debug\net8.0\LoggerService.pdb
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\LoggerService\bin\Debug\net8.0\Contracts.dll
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\LoggerService\bin\Debug\net8.0\Contracts.pdb
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\LoggerService\obj\Debug\net8.0\LoggerService.csproj.AssemblyReference.cache
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\LoggerService\obj\Debug\net8.0\LoggerService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\LoggerService\obj\Debug\net8.0\LoggerService.AssemblyInfoInputs.cache
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\LoggerService\obj\Debug\net8.0\LoggerService.AssemblyInfo.cs
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\LoggerService\obj\Debug\net8.0\LoggerService.csproj.CoreCompileInputs.cache
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\LoggerService\obj\Debug\net8.0\LoggerSe.E7AEA5A8.Up2Date
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\LoggerService\obj\Debug\net8.0\LoggerService.dll
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\LoggerService\obj\Debug\net8.0\refint\LoggerService.dll
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\LoggerService\obj\Debug\net8.0\LoggerService.pdb
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\LoggerService\obj\Debug\net8.0\ref\LoggerService.dll

@@ -7,22 +7,26 @@ using System.Threading.Tasks;
 
 namespace Entities.Models
 {
-    public class Employee
+    
+    public class Company
     {
 
-        [Column("CompanyId")]
+        [Column("EmployeeID")]
         public Guid Id {get; set;}
 
-        [Required(ErrorMessage = "Company's name is a required field")]
-        [MaxLength(60, ErrorMessage = "Maximum character length for company's name is 60")]
+        [Required(ErrorMessage = "Employee's name is a required field")]
+        [MaxLength(60, ErrorMessage = "Maximum character length for Employee's name is 60")]
         public string? Name {get; set;}
+
+        [Required(ErrorMessage = "Employee's age is a required field")]
+        public int? Age {get; set;}
+
+
+        [Required(ErrorMessage = "Position is a required field")]
+        [MaxLength(60, ErrorMessage = "Maximum character length for Employee's name is 60")]
+        public string? Position {get; set;}
+
         
-        [Required(ErrorMessage = "Company's  address is a required field")]
-        [MaxLength(60, ErrorMessage = "Maximum character length for company's addres is 60")]
-        public string? Address {get; set;}
-
-        public string? Country {get; set;}
-
         [ForeignKey(nameof(Company))]
         public Guid CompanyId {get; set;}
 

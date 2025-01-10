@@ -13,3 +13,4 @@ C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\LoggerService\obj\Debug\net8.
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\LoggerService\obj\Debug\net8.0\refint\LoggerService.dll
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\LoggerService\obj\Debug\net8.0\LoggerService.pdb
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\LoggerService\obj\Debug\net8.0\ref\LoggerService.dll
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\LoggerService\obj\Debug\net8.0\LoggerService.sourcelink.json

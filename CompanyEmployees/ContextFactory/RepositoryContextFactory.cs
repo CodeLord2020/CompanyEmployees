@@ -1,7 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
+using Repository;
 
 namespace CompanyEmployees.ContextFactory
 {
@@ -10,16 +9,16 @@ namespace CompanyEmployees.ContextFactory
         public RepositoryContext CreateDbContext(string[] args)
         {
             var configuration = new ConfigurationBuilder().
-            setBasePath(Directory.GetCurrentDirectory()).
-            AddJsonFile("appsettings.json", optional: false).
+            SetBasePath(Directory.GetCurrentDirectory()).
+            AddJsonFile("appsettings.json", optional: false)
             .Build();
 
             var builder = new DbContextOptionsBuilder<RepositoryContext>().
-            UseSqlServer(configuration.GetConnectionString("sqlConnnection"));
+            UseSqlServer(configuration.GetConnectionString("sqlConnnection"),
+            b => b.MigrationsAssembly("CompanyEmployees"));;
 
             return new RepositoryContext(builder.Options);
         }
 
-        
     }
 }

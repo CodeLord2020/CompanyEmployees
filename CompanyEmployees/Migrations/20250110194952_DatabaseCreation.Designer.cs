@@ -12,7 +12,7 @@ using Repository;
 namespace CompanyEmployees.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    [Migration("20250110185233_DatabaseCreation")]
+    [Migration("20250110194952_DatabaseCreation")]
     partial class DatabaseCreation
     {
         /// <inheritdoc />

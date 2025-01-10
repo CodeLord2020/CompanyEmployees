@@ -3,3 +3,10 @@ C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Entities\obj\Debug\net8.0\Ent
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Entities\obj\Debug\net8.0\Entities.sourcelink.json
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Entities\bin\Debug\net8.0\Entities.deps.json
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Entities\bin\Debug\net8.0\Entities.dll
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Entities\bin\Debug\net8.0\Entities.pdb
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Entities\obj\Debug\net8.0\Entities.dll
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Entities\obj\Debug\net8.0\refint\Entities.dll
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Entities\obj\Debug\net8.0\Entities.pdb
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Entities\obj\Debug\net8.0\ref\Entities.dll

@@ -1640,6 +1640,22 @@
           }
         }
       },
+      "CompanyEmployees.Presentation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Service.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CompanyEmployees.Presentation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CompanyEmployees.Presentation.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -4880,6 +4896,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "CompanyEmployees.Presentation/1.0.0": {
+      "type": "project",
+      "path": "../CompanyEmployees.Presentation/CompanyEmployees.Presentation.csproj",
+      "msbuildProject": "../CompanyEmployees.Presentation/CompanyEmployees.Presentation.csproj"
+    },
     "Contracts/1.0.0": {
       "type": "project",
       "path": "../Contracts/Contracts.csproj",
@@ -4913,6 +4934,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "CompanyEmployees.Presentation >= 1.0.0",
       "LoggerService >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.0",
@@ -4945,6 +4967,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees.Presentation\\CompanyEmployees.Presentation.csproj": {
+              "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees.Presentation\\CompanyEmployees.Presentation.csproj"
+            },
             "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\LoggerService\\LoggerService.csproj": {
               "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\LoggerService\\LoggerService.csproj"
             },

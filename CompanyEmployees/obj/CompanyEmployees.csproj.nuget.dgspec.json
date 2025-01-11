@@ -176,7 +176,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Entities\\Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -431,7 +435,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Entities\\Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

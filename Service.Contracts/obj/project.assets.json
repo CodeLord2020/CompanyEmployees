@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entities.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Entities/1.0.0": {
+      "type": "project",
+      "path": "../Entities/Entities.csproj",
+      "msbuildProject": "../Entities/Entities.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "Entities >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Macsauce\\.nuget\\packages\\": {}
@@ -13,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj",
+      "projectUniqueName": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj",
       "projectName": "Service.Contracts",
-      "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj",
+      "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj",
       "packagesPath": "C:\\Users\\Macsauce\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\obj\\",
+      "outputPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Macsauce\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -31,7 +50,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Entities\\Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

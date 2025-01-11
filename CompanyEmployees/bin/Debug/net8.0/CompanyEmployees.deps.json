@@ -8,10 +8,12 @@
     ".NETCoreApp,Version=v8.0": {
       "CompanyEmployees/1.0.0": {
         "dependencies": {
+          "CompanyEmployees.Presentation": "1.0.0",
           "LoggerService": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.0",
-          "Repository": "1.0.0"
+          "Repository": "1.0.0",
+          "Service": "1.0.0"
         },
         "runtime": {
           "CompanyEmployees.dll": {}
@@ -1060,7 +1062,18 @@
           }
         }
       },
+      "CompanyEmployees.Presentation/1.0.0": {
+        "dependencies": {
+          "Service.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "CompanyEmployees.Presentation.dll": {}
+        }
+      },
       "Contracts/1.0.0": {
+        "dependencies": {
+          "Entities": "1.0.0"
+        },
         "runtime": {
           "Contracts.dll": {}
         }
@@ -1081,11 +1094,29 @@
       },
       "Repository/1.0.0": {
         "dependencies": {
+          "Contracts": "1.0.0",
           "Entities": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.0"
         },
         "runtime": {
           "Repository.dll": {}
+        }
+      },
+      "Service/1.0.0": {
+        "dependencies": {
+          "Contracts": "1.0.0",
+          "Service.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "Service.dll": {}
+        }
+      },
+      "Service.Contracts/1.0.0": {
+        "dependencies": {
+          "Entities": "1.0.0"
+        },
+        "runtime": {
+          "Service.Contracts.dll": {}
         }
       }
     }
@@ -1663,6 +1694,11 @@
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
+    "CompanyEmployees.Presentation/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Contracts/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -1679,6 +1715,16 @@
       "sha512": ""
     },
     "Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Service.Contracts/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

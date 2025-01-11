@@ -1,14 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Service.Contracts;
 
 namespace CompanyEmployees.Presentation.Controllers
 {
-    [ApiController]
     [Route("api/companies")]
+    [ApiController]
     public class CompaniesController : ControllerBase
     {
         private readonly IServiceManager _service;
@@ -20,13 +16,13 @@ namespace CompanyEmployees.Presentation.Controllers
         [HttpGet]
         public IActionResult GetCompanies()
         {
-            try {
+            // try {
                   var companies = _service.CompanyService.GetAllCompanies(trackChanges: false);
                   return Ok(companies);
-            }
-            catch {
-                    return StatusCode (500, "Internal Server Error");
-            }
+            // }
+            // catch (Exception ex) {
+            //         return StatusCode (500, "Inter-anal Server Error");
+            // }
         }
 
     }

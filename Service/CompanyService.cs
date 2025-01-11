@@ -23,6 +23,7 @@ namespace Service
            try {
 
                 var companies = _repository.Company.GetAllCompanies(trackChanges);
+                Console.WriteLine("Hello", companies);
                 return companies;
            }
            catch (Exception ex) {

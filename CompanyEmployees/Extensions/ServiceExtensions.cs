@@ -1,5 +1,6 @@
 ﻿using Contracts;
 using LoggerService;
+using Repository;
 
 namespace CompanyEmployees.Extensions;
 
@@ -13,6 +14,9 @@ public static class ServiceExtensions
 			.AllowAnyMethod()
 			.AllowAnyHeader());
 		});
+
+	public static void ConfigureRepositoryManager(this IServiceCollection services) =>
+		services.AddScoped<IRepositoryManager, RepositoryManager>();
 
 	public static void ConfigureIISIntegration(this IServiceCollection services) =>
 		services.Configure<IISOptions>(options =>

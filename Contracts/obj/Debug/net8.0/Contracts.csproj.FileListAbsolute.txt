@@ -10,3 +10,7 @@ C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Contracts\obj\Debug\net8.0\re
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Contracts\obj\Debug\net8.0\Contracts.pdb
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Contracts\obj\Debug\net8.0\ref\Contracts.dll
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Contracts\obj\Debug\net8.0\Contracts.sourcelink.json
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Contracts\bin\Debug\net8.0\Entities.dll
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Contracts\bin\Debug\net8.0\Entities.pdb
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Contracts\obj\Debug\net8.0\Contracts.csproj.AssemblyReference.cache
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Contracts\obj\Debug\net8.0\Contracts.csproj.Up2Date

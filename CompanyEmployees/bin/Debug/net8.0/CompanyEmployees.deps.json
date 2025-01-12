@@ -12,6 +12,7 @@
           "LoggerService": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.0",
+          "Microsoft.OpenApi": "1.6.23",
           "Repository": "1.0.0",
           "Service": "1.0.0"
         },
@@ -711,6 +712,14 @@
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
+      "Microsoft.OpenApi/1.6.23": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "assemblyVersion": "1.6.23.0",
+            "fileVersion": "1.6.23.0"
+          }
+        }
+      },
       "Microsoft.SqlServer.Server/1.0.0": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.SqlServer.Server.dll": {
@@ -1420,6 +1429,13 @@
       "sha512": "sha512-aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.OpenApi/1.6.23": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tZ1I0KXnn98CWuV8cpI247A17jaY+ILS9vvF7yhI0uPPEqF4P1d7BWL5Uwtel10w9NucllHB3nTkfYTAcHAh8g==",
+      "path": "microsoft.openapi/1.6.23",
+      "hashPath": "microsoft.openapi.1.6.23.nupkg.sha512"
     },
     "Microsoft.SqlServer.Server/1.0.0": {
       "type": "package",

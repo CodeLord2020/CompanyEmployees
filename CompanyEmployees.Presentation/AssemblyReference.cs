@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CompanyEmployees.Presentation
 {
-    public class AssemblyReference
+    public static class AssemblyReference
     {
         
     }

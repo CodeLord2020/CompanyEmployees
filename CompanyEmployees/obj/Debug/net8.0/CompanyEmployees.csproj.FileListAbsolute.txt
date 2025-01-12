@@ -180,3 +180,4 @@ C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees\bin\Debug\ne
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees\bin\Debug\net8.0\CompanyEmployees.Presentation.pdb
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees\bin\Debug\net8.0\Service.Contracts.pdb
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees\obj\Debug\net8.0\CompanyEmployees.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees\bin\Debug\net8.0\Microsoft.OpenApi.dll

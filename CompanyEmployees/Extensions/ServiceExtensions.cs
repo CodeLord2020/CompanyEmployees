@@ -4,6 +4,9 @@ using Repository;
 using Service;
 using Microsoft.EntityFrameworkCore;
 using Service.Contracts;
+using System.Net;
+using Microsoft.AspNetCore.Diagnostics;
+using Entities.ErrorModel;
 
 namespace CompanyEmployees.Extensions;
 

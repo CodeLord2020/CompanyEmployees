@@ -181,3 +181,7 @@ C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees\bin\Debug\ne
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees\bin\Debug\net8.0\Service.Contracts.pdb
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees\obj\Debug\net8.0\CompanyEmployees.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees\bin\Debug\net8.0\Shared.dll
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees\bin\Debug\net8.0\Shared.pdb
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

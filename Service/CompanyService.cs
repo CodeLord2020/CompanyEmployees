@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Contracts;
 using Entities.Models;
 using Service.Contracts;
@@ -13,10 +14,13 @@ namespace Service
     {
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;
-        public CompanyService(IRepositoryManager repository, ILoggerManager logger)
+        private readonly IMapper _mapper;
+        public CompanyService(IRepositoryManager repository, ILoggerManager logger, IMapper mapper)
         {
             _repository = repository;
             _logger = logger;
+            _mapper = mapper;
+
         }
 
         public IEnumerable<CompanyDTO> GetAllCompanies(bool trackChanges)
@@ -24,8 +28,9 @@ namespace Service
            try {
 
                 var companies = _repository.Company.GetAllCompanies(trackChanges);
-                var companiesDTO = companies.Select(company => new CompanyDTO(
-                    company.Id, company.Name ?? "", string.Join(' ', company.Address, company.Country))).ToList();
+                // var companiesDTO = companies.Select(company => new CompanyDTO(
+                //     company.Id, company.Name ?? "", string.Join(' ', company.Address, company.Country))).ToList();
+                var companiesDTO = _mapper.Map<IEnumerable<CompanyDTO>>(companies);
                 Console.WriteLine("Hello", companies);
                 return companiesDTO;
            }

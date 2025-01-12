@@ -1,8 +1,6 @@
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Service.Contracts\bin\Debug\net8.0\Service.Contracts.deps.json
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Service.Contracts\bin\Debug\net8.0\Service.Contracts.dll
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Service.Contracts\bin\Debug\net8.0\Service.Contracts.pdb
-C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Service.Contracts\bin\Debug\net8.0\Entities.dll
-C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Service.Contracts\bin\Debug\net8.0\Entities.pdb
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Service.Contracts\obj\Debug\net8.0\Service.Contracts.csproj.AssemblyReference.cache
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Service.Contracts\obj\Debug\net8.0\Service.Contracts.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Service.Contracts\obj\Debug\net8.0\Service.Contracts.AssemblyInfoInputs.cache
@@ -14,3 +12,5 @@ C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Service.Contracts\obj\Debug\n
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Service.Contracts\obj\Debug\net8.0\refint\Service.Contracts.dll
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Service.Contracts\obj\Debug\net8.0\Service.Contracts.pdb
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Service.Contracts\obj\Debug\net8.0\ref\Service.Contracts.dll
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Service.Contracts\bin\Debug\net8.0\Shared.dll
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Service.Contracts\bin\Debug\net8.0\Shared.pdb

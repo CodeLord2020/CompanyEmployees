@@ -1,10 +1,8 @@
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees.Presentation\bin\Debug\net8.0\CompanyEmployees.Presentation.deps.json
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees.Presentation\bin\Debug\net8.0\CompanyEmployees.Presentation.dll
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees.Presentation\bin\Debug\net8.0\CompanyEmployees.Presentation.pdb
-C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees.Presentation\bin\Debug\net8.0\Entities.dll
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees.Presentation\bin\Debug\net8.0\Service.Contracts.dll
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees.Presentation\bin\Debug\net8.0\Service.Contracts.pdb
-C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees.Presentation\bin\Debug\net8.0\Entities.pdb
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees.Presentation\obj\Debug\net8.0\CompanyEmployees.Presentation.csproj.AssemblyReference.cache
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees.Presentation\obj\Debug\net8.0\CompanyEmployees.Presentation.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees.Presentation\obj\Debug\net8.0\CompanyEmployees.Presentation.AssemblyInfoInputs.cache
@@ -16,3 +14,5 @@ C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees.Presentation
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees.Presentation\obj\Debug\net8.0\refint\CompanyEmployees.Presentation.dll
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees.Presentation\obj\Debug\net8.0\CompanyEmployees.Presentation.pdb
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees.Presentation\obj\Debug\net8.0\ref\CompanyEmployees.Presentation.dll
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees.Presentation\bin\Debug\net8.0\Shared.dll
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees.Presentation\bin\Debug\net8.0\Shared.pdb

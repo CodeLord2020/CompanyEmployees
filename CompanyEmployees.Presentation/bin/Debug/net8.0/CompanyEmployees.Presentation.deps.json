@@ -14,17 +14,17 @@
           "CompanyEmployees.Presentation.dll": {}
         }
       },
-      "Entities/1.0.0": {
-        "runtime": {
-          "Entities.dll": {}
-        }
-      },
       "Service.Contracts/1.0.0": {
         "dependencies": {
-          "Entities": "1.0.0"
+          "Shared": "1.0.0"
         },
         "runtime": {
           "Service.Contracts.dll": {}
+        }
+      },
+      "Shared/1.0.0": {
+        "runtime": {
+          "Shared.dll": {}
         }
       }
     }
@@ -35,12 +35,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Entities/1.0.0": {
+    "Service.Contracts/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Service.Contracts/1.0.0": {
+    "Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

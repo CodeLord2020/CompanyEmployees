@@ -1,5 +1,6 @@
 using AutoMapper;
 using CompanyEmployees.Extensions;
+using Contracts;
 using Microsoft.AspNetCore.HttpOverrides;
 using NLog;
 
@@ -18,10 +19,11 @@ builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.AddAutoMapper(typeof(Program));
 
 var app = builder.Build();
+var logger = app.Services.GetRequiredService<ILoggerManager>();
+app.ConfigureExceptionHandler(logger);
+// app.UseExceptionHandler(opt => { });
 
-if (app.Environment.IsDevelopment())
-    app.UseDeveloperExceptionPage();
-else
+if (app.Environment.IsProduction())
     app.UseHsts();
 
 app.UseHttpsRedirection();

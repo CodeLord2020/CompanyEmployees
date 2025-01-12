@@ -5,12 +5,12 @@ using System.Net;
 
 namespace CompanyEmployees.Extensions
 {
+    
     public static class ExceptionMiddlewareExtensions
     {
-        public static void ConfigureExceptionHandler (this WebApplication app,
-            ILogger logger)
+        public static void ConfigureExceptionHandler(this WebApplication app, ILoggerManager logger)
         {
-            app.UseExceptionHandler (appError => 
+            app.UseExceptionHandler(appError =>
             {
                 appError.Run(async context =>
                 {
@@ -21,16 +21,16 @@ namespace CompanyEmployees.Extensions
                     if (contextFeature != null)
                     {
                         logger.LogError($"Something went wrong: {contextFeature.Error}");
-                    
+
                         await context.Response.WriteAsync(new ErrorDetails()
                         {
                             StatusCode = context.Response.StatusCode,
                             Message = "Internal Server Error.",
-
                         }.ToString());
                     }
                 });
             });
         }
     }
+
 }

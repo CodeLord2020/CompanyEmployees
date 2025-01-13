@@ -1,4 +1,5 @@
 using Contracts;
+using Entities.Exceptions;
 using Entities.Models;
 
 namespace Repository
@@ -23,8 +24,18 @@ namespace Repository
             throw new NotImplementedException();
         }
 
-        public Company GetCompany(Guid companyId, bool trackChanges) =>
-            FindByCondition(c => c.Id.Equals(companyId), trackChanges)
-            .SingleOrDefault();
+        public Company GetCompany(Guid companyId, bool trackChanges) 
+        {
+            var company = FindByCondition(c => c.Id.Equals(companyId), trackChanges).SingleOrDefault();
+            if (company == null)
+            {
+                throw new CompanyNotFoundException(companyId);
+            }
+            return company;
+        }
+        
+        // =>
+        //     FindByCondition(c => c.Id.Equals(companyId), trackChanges)
+        //     .SingleOrDefault();
     }
 }

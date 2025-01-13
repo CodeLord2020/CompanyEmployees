@@ -23,9 +23,8 @@ namespace Repository
             throw new NotImplementedException();
         }
 
-        public Company GetCompany(Guid companyId, bool trackChanges)
-        {
-            throw new NotImplementedException();
-        }
+        public Company GetCompany(Guid companyId, bool trackChanges) =>
+        FindByCondition(c => c.Id.Equals(companyId), trackChanges)
+        .SingleOrDefault();
     }
 }

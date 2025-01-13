@@ -1,3 +1,7 @@
 2025-01-13 11:41:17.7902 ERROR Something went wrong: The company with id: 3d490a70-94ce-4d15-9494-5248280c2ce2 doesn't exist in the database.
 2025-01-13 11:42:10.8265 ERROR Something went wrong: The company with id: 3d490a70-94ce-4d15-9494-5248280c2ce2 doesn't exist in the database.
 2025-01-13 11:42:23.7346 ERROR Something went wrong: The company with id: 3d490a70-94ce-4d15-9494-5248280c2ce4 doesn't exist in the database.
+2025-01-13 20:21:12.9410 ERROR Something went wrong: The company with id: c9d4c053-49b6-410c-bc78-2d54a9991873 doesn't exist in the database.
+2025-01-13 20:21:23.1772 ERROR Something went wrong: The company with id: 3d490a70-94ce-4d15-9494-5248280c2ce2 doesn't exist in the database.
+2025-01-13 21:29:41.1424 ERROR Something went wrong: Employee with id: 86dba8c0-d178-41e7-938c-ed49778fb51a doesn't exist in the database.
+2025-01-13 21:29:59.9630 ERROR Something went wrong: The company with id: c9d4c053-49b6-410c-bc98-2d54a9991870 doesn't exist in the database.

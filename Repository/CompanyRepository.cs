@@ -3,7 +3,7 @@ using Entities.Models;
 
 namespace Repository
 {
-    public class CompanyRepository : RepositoryBase<Company>, ICompanyRepository
+    internal sealed class CompanyRepository : RepositoryBase<Company>, ICompanyRepository
     {
         public CompanyRepository(RepositoryContext repositoryContext) : base(repositoryContext)
         {
@@ -24,7 +24,7 @@ namespace Repository
         }
 
         public Company GetCompany(Guid companyId, bool trackChanges) =>
-        FindByCondition(c => c.Id.Equals(companyId), trackChanges)
-        .SingleOrDefault();
+            FindByCondition(c => c.Id.Equals(companyId), trackChanges)
+            .SingleOrDefault();
     }
 }

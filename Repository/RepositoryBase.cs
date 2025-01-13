@@ -30,13 +30,13 @@ namespace Repository
                 .AsNoTracking() : 
             RepositoryContext.Set<T>();
 
-        public IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression, bool trackChanges) =>
-            !trackChanges ? RepositoryContext.Set<T>()
-                .Where(expression).
-                AsNoTracking() : 
-            RepositoryContext.Set<T>()
-                .Where(expression);
-
+       public IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression, bool trackChanges) =>
+		!trackChanges ?
+		  RepositoryContext.Set<T>()
+			.Where(expression)
+			.AsNoTracking() :
+		  RepositoryContext.Set<T>()
+			.Where(expression);
 
         public void Update(T entity)
         {

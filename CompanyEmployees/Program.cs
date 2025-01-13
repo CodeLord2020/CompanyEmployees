@@ -13,15 +13,17 @@ builder.Services.ConfigureIISIntegration();
 builder.Services.ConfigureLoggerService();
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServiceManager();
+builder.Services.ConfigureSqlContext(builder.Configuration);
+builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddControllers()
     .AddApplicationPart(typeof(CompanyEmployees.Presentation.AssemblyReference).Assembly);
 builder.Services.ConfigureSqlContext(builder.Configuration);
-builder.Services.AddAutoMapper(typeof(Program));
 
 var app = builder.Build();
-var logger = app.Services.GetRequiredService<ILoggerManager>();
-app.ConfigureExceptionHandler(logger);
-// app.UseExceptionHandler(opt => { });
+// var logger = app.Services.GetRequiredService<ILoggerManager>();
+// app.ConfigureExceptionHandler(logger);
+app.UseExceptionHandler(opt => { });
 
 if (app.Environment.IsProduction())
     app.UseHsts();

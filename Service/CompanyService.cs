@@ -41,5 +41,13 @@ namespace Service
            }
 
         }
+
+        public CompanyDTO GetCompany(Guid Id, bool trackChanges)
+        {
+            var company = _repository.Company.GetCompany(Id, trackChanges);
+
+            var companyDTO = _mapper.Map<CompanyDTO>(company);
+            return companyDTO;
+        }
     }
 }

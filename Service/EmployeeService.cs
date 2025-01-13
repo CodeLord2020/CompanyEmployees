@@ -24,6 +24,11 @@ namespace Service
 
         public EmployeeDto GetEmployee(Guid employeeId, Guid companyId, bool trackChanges)
         {
+            var company = _repository.Company.GetCompany(companyId, trackChanges);
+            if (company == null)
+            {
+                throw new CompanyNotFoundException(companyId);
+            }
             var employee = _repository.Employee.GetEmployee(employeeId, companyId, trackChanges);
             var employeeDto = _mapper.Map<EmployeeDto>(employee);
             return employeeDto;

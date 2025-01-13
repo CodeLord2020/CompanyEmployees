@@ -7,6 +7,7 @@ using Service.Contracts;
 using System.Net;
 using Microsoft.AspNetCore.Diagnostics;
 using Entities.ErrorModel;
+using CompanyEmployees.Formatters;
 
 namespace CompanyEmployees.Extensions;
 
@@ -20,6 +21,8 @@ public static class ServiceExtensions
 			.AllowAnyMethod()
 			.AllowAnyHeader());
 		});
+	public static IMvcBuilder AddCustomCSVFormatter(this IMvcBuilder builder) =>
+	 builder.AddMvcOptions(config => config.OutputFormatters.Add(new CsvOutputFormatter()));
 
 	public static void ConfigureSqlContext(this IServiceCollection services,
 		IConfiguration configuration) => services.AddDbContext<RepositoryContext>(opts =>

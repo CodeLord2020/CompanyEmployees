@@ -43,9 +43,7 @@ namespace CompanyEmployees.Formatters
                 }
             else
                 {
-
                     FormatCsv(buffer, (CompanyDTO)context.Object);
-
                 }
 
             await response.WriteAsync(buffer.ToString());

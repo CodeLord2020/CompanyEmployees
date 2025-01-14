@@ -12,10 +12,16 @@ namespace Repository
             
         }
 
+        public void CreateEmployeeForCompany(Guid companyId, Employee employee)
+        {
+            employee.CompanyId = companyId;
+            Create(employee);
+        }
+
         public Employee GetEmployee(Guid employeeId, Guid companyId, bool trackChanges)
         {
             var employee = FindByCondition(e => e.Id == employeeId && e.CompanyId == companyId,  trackChanges).SingleOrDefault();
-            if (employee == null)
+            if (employee is null)
             {
                 throw new EmployeeNotFoundException(employeeId);
             }

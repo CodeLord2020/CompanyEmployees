@@ -27,7 +27,7 @@ namespace Repository
         public Company GetCompany(Guid companyId, bool trackChanges) 
         {
             var company = FindByCondition(c => c.Id.Equals(companyId), trackChanges).SingleOrDefault();
-            if (company == null)
+            if (company is null)
             {
                 throw new CompanyNotFoundException(companyId);
             }

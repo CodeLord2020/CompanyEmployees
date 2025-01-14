@@ -1,8 +1,8 @@
-using AutoMapper;
 using CompanyEmployees;
 using CompanyEmployees.Extensions;
 using Contracts;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.AspNetCore.Mvc;
 using NLog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -23,6 +23,14 @@ builder.Services.AddControllers(config => {
 }).AddXmlDataContractSerializerFormatters()
     .AddCustomCSVFormatter()
     .AddApplicationPart(typeof(CompanyEmployees.Presentation.AssemblyReference).Assembly);
+
+// suppressing a default model state validation that is implemented
+// due to the existence of the [ApiController] attribute in all API controllers.
+// builder.Services.Configure<ApiBehaviorOptions>(options =>
+// {
+//     options.SuppressModelStateInvalidFilter = true;
+// });
+
 builder.Services.ConfigureSqlContext(builder.Configuration);
 
 var app = builder.Build();

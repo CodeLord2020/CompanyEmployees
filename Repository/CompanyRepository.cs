@@ -12,7 +12,7 @@ namespace Repository
 
         public void CreateCompany(Company company)
         {
-            throw new NotImplementedException();
+            Create(company);
         }
 
         public IEnumerable<Company> GetAllCompanies(bool trackChanges) =>

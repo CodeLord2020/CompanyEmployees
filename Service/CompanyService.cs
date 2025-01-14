@@ -54,6 +54,21 @@ namespace Service
 
         }
 
+        public IEnumerable<CompanyDTO> GetCompaniesById(IEnumerable<Guid> Ids, bool trackChanges)
+        {
+            if(Ids is null){
+               throw new IdParametersBadRequestException();
+            }
+            var companies = _repository.Company.GetByIds(Ids, trackChanges);
+            if (Ids.Count() != companies.Count()){
+                throw new CollectionByIdsBadRequestException();
+            }
+
+            var companiesToReturn = _mapper.Map<IEnumerable<CompanyDTO>>(companies);
+            return companiesToReturn;
+
+        }
+
         public CompanyDTO GetCompany(Guid Id, bool trackChanges)
         {
             var company = _repository.Company.GetCompany(Id, trackChanges);

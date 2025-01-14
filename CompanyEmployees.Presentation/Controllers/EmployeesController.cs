@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Service.Contracts;
+using Shared.DataTransferObjects;
 
 namespace CompanyEmployees.Presentation.Controllers
 {
-    [ApiController]
+    
     [Route("api/companies/{companyId}/employees")]
+    [ApiController]
     public class EmployeesController : ControllerBase
     {
         private readonly IServiceManager _service;
@@ -26,11 +28,23 @@ namespace CompanyEmployees.Presentation.Controllers
             return Ok(employees);
         }
 
-        [HttpGet("{employeeId:guid}")]
+        [HttpGet("{id:guid}", Name = "GetEmployeeForCompany")]
         public IActionResult GetEmployee(Guid employeeId, Guid companyId)
         {
             var employee = _service.EmployeeService.GetEmployee(employeeId, companyId, trackChanges:false);
             return Ok(employee);
+        }
+
+        [HttpPost]
+        public IActionResult CreateEmployeeForCompany(Guid companyId, [FromBody] EmployeeForCreationDto employee)
+        {
+            if (employee is null)
+                return BadRequest("EmployeeForCreationDto object is null");
+
+            var employeeToReturn = _service.EmployeeService.CreateEmployeeForCompany(companyId, employee, trackChanges: false);
+
+            return CreatedAtRoute("GetEmployeeForCompany", new { companyId, id = employeeToReturn.Id },
+                employeeToReturn);
         }
     }
 }

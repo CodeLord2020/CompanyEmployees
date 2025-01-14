@@ -63,14 +63,14 @@ namespace Service
             return employeesDto;
         }
 
-        EmployeeDto IEmployeeService.GetEmployee(Guid employeeId, Guid companyId, bool trackChanges)
-        {
-            throw new NotImplementedException();
-        }
+        // EmployeeDto IEmployeeService.GetEmployee(Guid employeeId, Guid companyId, bool trackChanges)
+        // {
+        //     throw new NotImplementedException();
+        // }
 
-        IEnumerable<EmployeeDto> IEmployeeService.GetEmployees(Guid companyId, bool trackChanges)
-        {
-            throw new NotImplementedException();
-        }
+        // IEnumerable<EmployeeDto> IEmployeeService.GetEmployees(Guid companyId, bool trackChanges)
+        // {
+        //     throw new NotImplementedException();
+        // }
     }
 }

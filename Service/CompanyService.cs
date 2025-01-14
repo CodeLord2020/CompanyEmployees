@@ -57,7 +57,7 @@ namespace Service
         public CompanyDTO GetCompany(Guid Id, bool trackChanges)
         {
             var company = _repository.Company.GetCompany(Id, trackChanges);
-            if (company == null) {
+            if (company is null) {
                 throw new CompanyNotFoundException(Id);
             }
 

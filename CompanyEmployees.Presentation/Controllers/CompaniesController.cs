@@ -41,6 +41,14 @@ namespace CompanyEmployees.Presentation.Controllers
             return Ok(companies);
         }
 
+        [HttpPost("collection")]
+        public IActionResult CreateCompanyByBulk([FromBody] IEnumerable<CompanyForCreationDto> companies)
+        {
+            var newcompaniesResponse = _service.CompanyService.CreateCompanyByBulk(companies);
+            // return newcompaniesResponse;
+            return CreatedAtRoute("CompanyCollection", new {newcompaniesResponse.Ids}, newcompaniesResponse.companies);
+        }
+
         [HttpPost]
         public IActionResult CreateCompany([FromBody] CompanyForCreationDto company)
         {

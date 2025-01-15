@@ -35,6 +35,26 @@ namespace Service
 
         }
 
+        public (IEnumerable<CompanyDTO> companies, string Ids) CreateCompanyByBulk(IEnumerable<CompanyForCreationDto> companyCollection)
+        {
+            if (companyCollection is null)
+            {
+                throw new CompanyCollectionBadRequest();
+            }
+            var toCompanies =  _mapper.Map<IEnumerable<Company>>(companyCollection);
+            foreach(var company in toCompanies){
+               _repository.Company.CreateCompany(company);
+            }
+            
+            _repository.Save();
+
+            var newcompanies = _mapper.Map<IEnumerable<CompanyDTO>>(toCompanies);
+            var Ids = string.Join (",", newcompanies.Select(c => c.Id));
+
+            return (companies: newcompanies, Ids: Ids);
+
+        }
+
         public IEnumerable<CompanyDTO> GetAllCompanies(bool trackChanges)
         {
            try {

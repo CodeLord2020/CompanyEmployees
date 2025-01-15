@@ -34,6 +34,13 @@ namespace CompanyEmployees.Presentation.Controllers
             return Ok(company);
         }
 
+        [HttpGet("collection/({Ids})", Name = "CompanyCollection")]
+        public IActionResult GetCommpaniesByIds(IEnumerable<Guid> Ids)
+        {
+            var companies = _service.CompanyService.GetCompaniesById(Ids,  trackChanges:false);
+            return Ok(companies);
+        }
+
         [HttpPost]
         public IActionResult CreateCompany([FromBody] CompanyForCreationDto company)
         {

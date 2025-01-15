@@ -55,6 +55,18 @@ namespace Service
 
         }
 
+        public void DeleteCompany(Guid companyId, bool trackChanges)
+        {
+            var companyInstance = _repository.Company.GetCompany(companyId, trackChanges);
+            if (companyInstance is null)
+            {
+                throw new CompanyNotFoundException(companyId);
+            }
+            _repository.Company.DeleteCompany(companyInstance);
+            _repository.Save();
+
+        }
+
         public IEnumerable<CompanyDTO> GetAllCompanies(bool trackChanges)
         {
            try {

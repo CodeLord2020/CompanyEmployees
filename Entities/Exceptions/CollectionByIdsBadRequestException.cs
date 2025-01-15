@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Entities.Exceptions
 {
-    public class CollectionByIdsBadRequestException : BadRequestException
+    public sealed class CollectionByIdsBadRequestException : BadRequestException
     {
         public CollectionByIdsBadRequestException() : base("Collection count mismatch comparing to ids.")
         {

@@ -40,6 +40,23 @@ namespace Service
             return employeeToReturn;
         }
 
+        public void DeleteEmployee(Guid employeeId, Guid companyId, bool trackChanges)
+        {
+           var company = _repository.Company.GetCompany(companyId, trackChanges);
+           
+           if (company is null){
+            throw new CompanyNotFoundException(companyId);
+           }
+           var  employee = _repository.Employee.GetEmployee(employeeId, companyId, trackChanges);
+
+           if (employee is null){
+            throw new EmployeeNotFoundException(employeeId);
+           }
+
+           _repository.Employee.DeleteEmployee(employee);
+           _repository.Save();
+        }
+
         public EmployeeDto GetEmployee(Guid employeeId, Guid companyId, bool trackChanges)
         {
             var company = _repository.Company.GetCompany(companyId, trackChanges);

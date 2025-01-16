@@ -103,13 +103,16 @@ namespace Service
 
         public CompanyDTO GetCompany(Guid Id, bool trackChanges)
         {
-            var company = _repository.Company.GetCompany(Id, trackChanges);
-            if (company is null) {
-                throw new CompanyNotFoundException(Id);
-            }
-
+            var company = _repository.Company.GetCompany(Id, trackChanges) ?? throw new CompanyNotFoundException(Id);
             var companyDTO = _mapper.Map<CompanyDTO>(company);
             return companyDTO;
+        }
+
+        public void UpdateCompany(Guid companyid, CompanyForUpdateDto companyForUpdate, bool trackChanges)
+        {
+            var company = _repository.Company.GetCompany(companyid, trackChanges) ?? throw new CompanyNotFoundException(companyid);
+            _mapper.Map(companyForUpdate, company);
+            _repository.Save();
         }
     }
 }

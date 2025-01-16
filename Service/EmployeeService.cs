@@ -51,6 +51,13 @@ namespace Service
            _repository.Save();
         }
 
+        public IEnumerable<EmployeeDto> GetAllEmployees(bool trackChanges)
+        {
+            var allEmployees =  _repository.Employee.GetAllEmployees(trackChanges);
+            var allemployeedto = _mapper.Map<IEnumerable<EmployeeDto>>(allEmployees); 
+            return allemployeedto;
+        }
+
         public EmployeeDto GetEmployee(Guid employeeId, Guid companyId, bool trackChanges)
         {
             var company = _repository.Company.GetCompany(companyId, trackChanges);
@@ -74,20 +81,17 @@ namespace Service
             return employeesDto;
         }
 
-        public void UpdateEmployeeForCompany(Guid companyId, Guid employeeId, EmployeeForUpdateDto employeeForUpdate, bool compTrackChanges, bool empTrackChanges)
+        public void UpdateEmployeeForCompany(Guid companyId, Guid employeeId, EmployeeForUpdateDto employeeForUpdate,
+         bool compTrackChanges, bool empTrackChanges)
         {
           
-            var companyInsatnce = _repository.Company.GetCompany(companyId, compTrackChanges);
-            if(companyInsatnce is null){
-                throw new CompanyNotFoundException(companyId);
-            }
+            var companyInsatnce = _repository.Company.GetCompany(companyId, compTrackChanges) 
+            ?? throw new CompanyNotFoundException(companyId);
 
-            var employeeInstance = _repository.Employee.GetEmployee(employeeId, companyId, empTrackChanges);
-            if (employeeInstance is null){
-                throw new EmployeeNotFoundException(employeeId);
-            }
+            var employeeInstance = _repository.Employee.GetEmployee(employeeId, companyId, empTrackChanges) 
+            ?? throw new EmployeeNotFoundException(employeeId);
 
-            _mapper.Map(employeeInstance, employeeForUpdate);
+            _mapper.Map(employeeForUpdate, employeeInstance);
             _repository.Save();
 
         }

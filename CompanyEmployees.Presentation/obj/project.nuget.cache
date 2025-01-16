@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "z0pRv6+3n3E=",
+  "dgSpecHash": "yR/YixWtrKc=",
   "success": true,
   "projectFilePath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees.Presentation\\CompanyEmployees.Presentation.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Macsauce\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\9.0.1\\microsoft.aspnetcore.jsonpatch.9.0.1.nupkg.sha512",
+    "C:\\Users\\Macsauce\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Macsauce\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

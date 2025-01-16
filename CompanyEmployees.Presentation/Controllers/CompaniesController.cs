@@ -60,6 +60,18 @@ namespace CompanyEmployees.Presentation.Controllers
             return CreatedAtRoute("GetCompanyById", new {id = createdcompany.Id}, createdcompany);
         }
 
+        [HttpPut("{id:guid}")]
+        public IActionResult UpdateCompany(Guid id, [FromBody] CompanyForUpdateDto company)
+        {
+            if (company is null)
+                return BadRequest("CompanyForUpdateDto object is null");
+
+            _service.CompanyService.UpdateCompany(id, company, trackChanges: true);
+            return NoContent();
+            
+        }
+
+
         [HttpDelete("{companyId:guid}")]
         public IActionResult DeleteCompany(Guid companyId)
         {

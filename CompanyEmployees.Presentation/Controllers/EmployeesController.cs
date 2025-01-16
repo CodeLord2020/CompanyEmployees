@@ -1,9 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata.Ecma335;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Service.Contracts;
 using Shared.DataTransferObjects;
@@ -22,13 +16,21 @@ namespace CompanyEmployees.Presentation.Controllers
         }
 
         [HttpGet]
+        [Route("~/api/employees")]
+        public IActionResult GetAllEmployees()
+        {
+            var employees = _service.EmployeeService.GetAllEmployees(trackChanges:false);
+            return Ok(employees);
+        }
+
+        [HttpGet]
         public IActionResult GetEmployeesForCompany(Guid companyId)
         {
             var employees = _service.EmployeeService.GetEmployees(companyId, trackChanges:false);
             return Ok(employees);
         }
 
-        [HttpGet("{id:guid}", Name = "GetEmployeeForCompany")]
+        [HttpGet("{employeeId:guid}", Name = "GetEmployeeForCompany")]
         public IActionResult GetEmployee(Guid employeeId, Guid companyId)
         {
             var employee = _service.EmployeeService.GetEmployee(employeeId, companyId, trackChanges:false);
@@ -48,14 +50,14 @@ namespace CompanyEmployees.Presentation.Controllers
         }
 
         [HttpPut("{id:guid}")]
-        public IActionResult UpdateEmployeeForCompany(Guid companyId, Guid employeeId, [FromBody] 
-        EmployeeForUpdateDto employee)
+        public IActionResult UpdateEmployeeForCompany(Guid companyId, Guid id,
+         [FromBody] EmployeeForUpdateDto employee)
         {
             if (employee is null){
                 return BadRequest("EmployeeForUpdateDto object is null");
             }
 
-            _service.EmployeeService.UpdateEmployeeForCompany(companyId, employeeId, employee, compTrackChanges: false, 
+            _service.EmployeeService.UpdateEmployeeForCompany(companyId, id, employee, compTrackChanges: false, 
             empTrackChanges: true);
 
             return NoContent();
@@ -69,4 +71,6 @@ namespace CompanyEmployees.Presentation.Controllers
             return NoContent();
         }
     }
+
+    
 }

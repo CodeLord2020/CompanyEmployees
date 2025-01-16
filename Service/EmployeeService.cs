@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using AutoMapper;
 using Contracts;
 using Entities.Exceptions;
@@ -16,6 +12,7 @@ namespace Service
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;
         private readonly IMapper _mapper;
+
         public EmployeeService(IRepositoryManager repository,
          ILoggerManager logger, IMapper mapper)
         {
@@ -24,14 +21,11 @@ namespace Service
             _mapper = mapper;
         }
 
-
         public EmployeeDto CreateEmployeeForCompany(Guid companyId, EmployeeForCreationDto employee, bool trackChanges)
         {
-            var company = _repository.Company.GetCompany(companyId, trackChanges);
-            if (company is null)
-            {
-                throw new CompanyNotFoundException(companyId);
-            }
+            var company = _repository.Company.GetCompany(companyId, trackChanges) 
+            ?? throw new CompanyNotFoundException(companyId);
+
             var maptoemployee = _mapper.Map<Employee>(employee);
             _repository.Employee.CreateEmployeeForCompany(companyId, maptoemployee);
             _repository.Save();
@@ -80,6 +74,23 @@ namespace Service
             return employeesDto;
         }
 
+        public void UpdateEmployeeForCompany(Guid companyId, Guid employeeId, EmployeeForUpdateDto employeeForUpdate, bool compTrackChanges, bool empTrackChanges)
+        {
+          
+            var companyInsatnce = _repository.Company.GetCompany(companyId, compTrackChanges);
+            if(companyInsatnce is null){
+                throw new CompanyNotFoundException(companyId);
+            }
+
+            var employeeInstance = _repository.Employee.GetEmployee(employeeId, companyId, empTrackChanges);
+            if (employeeInstance is null){
+                throw new EmployeeNotFoundException(employeeId);
+            }
+
+            _mapper.Map(employeeInstance, employeeForUpdate);
+            _repository.Save();
+
+        }
         // EmployeeDto IEmployeeService.GetEmployee(Guid employeeId, Guid companyId, bool trackChanges)
         // {
         //     throw new NotImplementedException();

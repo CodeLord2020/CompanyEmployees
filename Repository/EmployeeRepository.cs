@@ -23,6 +23,11 @@ namespace Repository
             Delete(employee);
         }
 
+        public IEnumerable<Employee> GetAllEmployees(bool trackChanges)
+        {
+          return FindAll(trackChanges).OrderBy(e => e.Name).ToList();
+        }
+
         public Employee GetEmployee(Guid employeeId, Guid companyId, bool trackChanges)
         {
             var employee = FindByCondition(e => e.Id == employeeId && e.CompanyId == companyId,  trackChanges).SingleOrDefault();

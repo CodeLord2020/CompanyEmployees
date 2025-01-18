@@ -24,10 +24,12 @@ builder.Services.AddControllers(config =>
 {
     config.RespectBrowserAcceptHeader = true;
     config.ReturnHttpNotAcceptable = true;
-    config.InputFormatters.Insert(0, GetJsonPatchInputFormatter());
-}).AddXmlDataContractSerializerFormatters()
-  .AddCustomCSVFormatter()
+    // config.InputFormatters.Insert(0, GetJsonPatchInputFormatter());
+})
+// .AddXmlDataContractSerializerFormatters()
+.AddNewtonsoftJson()
   .AddApplicationPart(typeof(CompanyEmployees.Presentation.AssemblyReference).Assembly);
+//   .AddCustomCSVFormatter()
 
 // suppressing a default model state validation that is implemented
 // due to the existence of the [ApiController] attribute in all API controllers.
@@ -61,8 +63,8 @@ app.MapControllers();
 
 app.Run();
 
-NewtonsoftJsonPatchInputFormatter GetJsonPatchInputFormatter() =>
-    new ServiceCollection().AddLogging().AddMvc().AddNewtonsoftJson()
-    .Services.BuildServiceProvider()
-    .GetRequiredService<IOptions<MvcOptions>>().Value.InputFormatters
-    .OfType<NewtonsoftJsonPatchInputFormatter>().First();
+// NewtonsoftJsonPatchInputFormatter GetJsonPatchInputFormatter() =>
+//     new ServiceCollection().AddLogging().AddMvc().AddNewtonsoftJson()
+//     .Services.BuildServiceProvider()
+//     .GetRequiredService<IOptions<MvcOptions>>().Value.InputFormatters
+//     .OfType<NewtonsoftJsonPatchInputFormatter>().First();

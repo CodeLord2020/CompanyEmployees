@@ -36,18 +36,13 @@ namespace Service
 
         public void DeleteEmployee(Guid employeeId, Guid companyId, bool trackChanges)
         {
-           var company = _repository.Company.GetCompany(companyId, trackChanges);
-           
-           if (company is null){
-            throw new CompanyNotFoundException(companyId);
-           }
-           var  employee = _repository.Employee.GetEmployee(employeeId, companyId, trackChanges);
+           var company = _repository.Company.GetCompany(companyId, trackChanges) 
+           ?? throw new CompanyNotFoundException(companyId);
 
-           if (employee is null){
-            throw new EmployeeNotFoundException(employeeId);
-           }
+            var employee = _repository.Employee.GetEmployee(employeeId, companyId, trackChanges)
+            ?? throw new EmployeeNotFoundException(employeeId);
 
-           _repository.Employee.DeleteEmployee(employee);
+            _repository.Employee.DeleteEmployee(employee);
            _repository.Save();
         }
 
@@ -70,6 +65,19 @@ namespace Service
             return employeeDto;
         }
 
+        public (EmployeeForUpdateDto employeeToPatch, Employee employeeEntity) GetEmployeeForPatch(Guid companyId, Guid id, bool compTrackChanges, bool empTrackChanges)
+        {
+            var companyInsatnce = _repository.Company.GetCompany(companyId, compTrackChanges) 
+            ?? throw new CompanyNotFoundException(companyId);
+
+            var employeeInstance = _repository.Employee.GetEmployee(id, companyId, empTrackChanges) 
+            ?? throw new EmployeeNotFoundException(id);
+
+            var employeeToPatch = _mapper.Map<EmployeeForUpdateDto>(employeeInstance);
+            return (employeeToPatch, employeeInstance);
+
+        }
+
         public IEnumerable<EmployeeDto> GetEmployees(Guid companyId, bool trackChanges)
         {
             var companies = _repository.Company.GetCompany(companyId, trackChanges);
@@ -79,6 +87,12 @@ namespace Service
             var employees = _repository.Employee.GetEmployees(companyId, trackChanges);
             var employeesDto = _mapper.Map<IEnumerable<EmployeeDto>>(employees);
             return employeesDto;
+        }
+
+        public void SaveChangesForPatch(EmployeeForUpdateDto employeeToPatch, Employee employeeEntity)
+        {
+            _mapper.Map(employeeToPatch, employeeEntity); 
+            _repository.Save();
         }
 
         public void UpdateEmployeeForCompany(Guid companyId, Guid employeeId, EmployeeForUpdateDto employeeForUpdate,

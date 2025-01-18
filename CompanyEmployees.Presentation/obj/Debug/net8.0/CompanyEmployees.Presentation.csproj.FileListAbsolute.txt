@@ -16,3 +16,5 @@ C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees.Presentation
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees.Presentation\obj\Debug\net8.0\ref\CompanyEmployees.Presentation.dll
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees.Presentation\bin\Debug\net8.0\Shared.dll
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees.Presentation\bin\Debug\net8.0\Shared.pdb
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees.Presentation\bin\Debug\net8.0\Entities.dll
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees.Presentation\bin\Debug\net8.0\Entities.pdb

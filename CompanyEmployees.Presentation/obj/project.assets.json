@@ -19,6 +19,27 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Mvc.NewtonsoftJson/8.0.12": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.JsonPatch": "8.0.12",
+          "Newtonsoft.Json": "13.0.3",
+          "Newtonsoft.Json.Bson": "1.0.2"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
@@ -38,6 +59,22 @@
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Newtonsoft.Json.Bson/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -95,6 +132,21 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.xml",
         "microsoft.aspnetcore.jsonpatch.9.0.1.nupkg.sha512",
         "microsoft.aspnetcore.jsonpatch.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Mvc.NewtonsoftJson/8.0.12": {
+      "sha512": "lwrEDZ+aSBo8MR9tcuO/k4nkdcYq4ho4SXsq5xJYYalN57PBBZKat8BInRycQoOA0bwrSe3qvEHggUTP5bHttw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.mvc.newtonsoftjson/8.0.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net8.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll",
+        "lib/net8.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.xml",
+        "microsoft.aspnetcore.mvc.newtonsoftjson.8.0.12.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.newtonsoftjson.nuspec"
       ]
     },
     "Microsoft.CSharp/4.7.0": {
@@ -196,6 +248,27 @@
         "packageIcon.png"
       ]
     },
+    "Newtonsoft.Json.Bson/1.0.2": {
+      "sha512": "QYFyxhaABwmq3p/21VrZNYvCg3DaEoN/wUuw5nmfAf0X3HLjgupwhkEWdgfb9nvGAUIv3osmZoD3kKl4jxEmYQ==",
+      "type": "package",
+      "path": "newtonsoft.json.bson/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net45/Newtonsoft.Json.Bson.dll",
+        "lib/net45/Newtonsoft.Json.Bson.pdb",
+        "lib/net45/Newtonsoft.Json.Bson.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.pdb",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.Bson.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.Bson.pdb",
+        "lib/netstandard2.0/Newtonsoft.Json.Bson.xml",
+        "newtonsoft.json.bson.1.0.2.nupkg.sha512",
+        "newtonsoft.json.bson.nuspec"
+      ]
+    },
     "Entities/1.0.0": {
       "type": "project",
       "path": "../Entities/Entities.csproj",
@@ -215,6 +288,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.AspNetCore.JsonPatch >= 9.0.1",
+      "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 8.0.*",
       "Service.Contracts >= 1.0.0"
     ]
   },
@@ -224,11 +298,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees.Presentation\\CompanyEmployees.Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees.Presentation\\CompanyEmployees.Presentation.csproj",
       "projectName": "CompanyEmployees.Presentation",
-      "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees.Presentation\\CompanyEmployees.Presentation.csproj",
+      "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees.Presentation\\CompanyEmployees.Presentation.csproj",
       "packagesPath": "C:\\Users\\Macsauce\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees.Presentation\\obj\\",
+      "outputPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees.Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Macsauce\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -243,8 +317,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj": {
-              "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj"
+            "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj": {
+              "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj"
             }
           }
         }
@@ -267,6 +341,10 @@
           "Microsoft.AspNetCore.JsonPatch": {
             "target": "Package",
             "version": "[9.0.1, )"
+          },
+          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+            "target": "Package",
+            "version": "[8.0.*, )"
           }
         },
         "imports": [

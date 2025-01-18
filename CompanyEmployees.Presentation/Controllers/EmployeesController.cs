@@ -54,15 +54,19 @@ namespace CompanyEmployees.Presentation.Controllers
         public IActionResult UpdateEmployeeForCompany(Guid companyId, Guid id,
          [FromBody] EmployeeForUpdateDto employee)
         {
-            if (employee is null){
+            if (employee is null)
                 return BadRequest("EmployeeForUpdateDto object is null");
-            }
+            
+
+            if (!ModelState.IsValid) 
+                return UnprocessableEntity(ModelState);
 
             _service.EmployeeService.UpdateEmployeeForCompany(companyId, id, employee, compTrackChanges: false, 
             empTrackChanges: true);
 
             return NoContent();
         }
+        
         [HttpPatch("{id:guid}")] 
         public IActionResult PartiallyUpdateEmployeeForCompany(Guid companyId, Guid id, 
         [FromBody] JsonPatchDocument<EmployeeForUpdateDto> patchDoc)

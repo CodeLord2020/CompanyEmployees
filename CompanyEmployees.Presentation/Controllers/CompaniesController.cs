@@ -73,22 +73,24 @@ namespace CompanyEmployees.Presentation.Controllers
             
         }
 
-        [HttpPatch("{companyId:guid}")]
-        public async Task<IActionResult> PatchCompany(Guid companyId, [FromBody]
-        JsonPatchDocument<CompanyForUpdateDto> patchDoc)
+        [HttpPatch("{id:guid}")]
+        public async Task<IActionResult> PatchCompany(Guid id, 
+        [FromBody] JsonPatchDocument<CompanyForUpdateDto> patchDoc)
         {
             if (patchDoc is null) 
-                  return BadRequest("patchDoc object sent from client is null.");
-            
-            var (companyDto,companyInstance) = await _service.CompanyService.GetCompanyForPatchAsync(companyId, compTrackChanges:false);
+                // Console.WriteLine("Hello, no p-doc");
+                return BadRequest("patchDoc object sent from client is null/Empty.");
+           
+            var (companyDto,companyInstance) = await _service.CompanyService.GetCompanyForPatchAsync(id, compTrackChanges:true);
             
             patchDoc.ApplyTo(companyDto, ModelState);
 
+
             if (!TryValidateModel(companyDto))
-                return UnprocessableEntity(companyDto);
+                return UnprocessableEntity(ModelState);
             
             await _service.CompanyService.SaveChangesForPatch(companyDto,companyInstance);
-            
+
             return NoContent();
 
         }

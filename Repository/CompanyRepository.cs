@@ -1,6 +1,7 @@
 using Contracts;
 using Entities.Exceptions;
 using Entities.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Repository
 {
@@ -22,23 +23,34 @@ namespace Repository
 
         public IEnumerable<Company> GetAllCompanies(bool trackChanges) =>
            FindAll(trackChanges).OrderBy(c => c.Name).ToList();
-        
+
+        public async Task<IEnumerable<Company>> GetAllCompaniesAsync(bool trackChanges)
+        {
+            return await FindAll(trackChanges).OrderBy(c => c.Name).ToListAsync();
+        }
 
         public IEnumerable<Company> GetByIds(IEnumerable<Guid> ids, bool trackChanges) =>
             FindByCondition(c => ids.Contains(c.Id), trackChanges).ToList();
 
+        public async Task<IEnumerable<Company>> GetByIdsAsync(IEnumerable<Guid> ids, bool trackChanges)
+        {
+            return await FindByCondition(c => ids.Contains(c.Id), trackChanges)
+            .ToListAsync();
+        }
+
         public Company GetCompany(Guid companyId, bool trackChanges) 
         {
-            var company = FindByCondition(c => c.Id.Equals(companyId), trackChanges).SingleOrDefault();
-            if (company is null)
-            {
-                throw new CompanyNotFoundException(companyId);
-            }
+            var company = FindByCondition(c => c.Id.Equals(companyId), trackChanges).SingleOrDefault() 
+            ?? throw new CompanyNotFoundException(companyId);
             return company;
         }
-        
-        // =>
-        //     FindByCondition(c => c.Id.Equals(companyId), trackChanges)
-        //     .SingleOrDefault();
+
+        public async Task<Company> GetCompanyAsync(Guid companyId, bool trackChanges) 
+        {
+           var  company = await FindByCondition(c => c.Id.Equals(companyId), trackChanges)
+                .SingleOrDefaultAsync() ?? 
+                            throw new CompanyNotFoundException(companyId);
+                            return company;
+        }
     }
 }

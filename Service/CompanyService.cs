@@ -117,6 +117,13 @@ namespace Service
 
         }
 
+        public async Task SaveChangesForPatch(CompanyForUpdateDto companyDto, Company companyInstance)
+        {
+            _mapper.Map(companyDto, companyInstance);
+            await _repository.SaveAsync();
+
+        }
+
         public async Task UpdateCompanyAsync(Guid companyid, CompanyForUpdateDto companyForUpdate, bool trackChanges)
         {
             var company = await _repository.Company.GetCompanyAsync(companyid, trackChanges) 

@@ -107,6 +107,16 @@ namespace Service
             return companyDTO;
         }
 
+        public async Task<(CompanyForUpdateDto companyToPatch, Company companyEntity)> GetCompanyForPatchAsync(Guid companyId, bool compTrackChanges)
+        {
+            var companyInstance = await _repository.Company.GetCompanyAsync(companyId, compTrackChanges)
+            ?? throw new CompanyNotFoundException(companyId);
+            
+            var companyDto = _mapper.Map<CompanyForUpdateDto>(companyInstance);
+            return (companyDto, companyInstance);
+
+        }
+
         public async Task UpdateCompanyAsync(Guid companyid, CompanyForUpdateDto companyForUpdate, bool trackChanges)
         {
             var company = await _repository.Company.GetCompanyAsync(companyid, trackChanges) 

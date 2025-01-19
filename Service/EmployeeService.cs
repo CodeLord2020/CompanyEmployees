@@ -67,7 +67,7 @@ namespace Service
 
         public (EmployeeForUpdateDto employeeToPatch, Employee employeeEntity) GetEmployeeForPatch(Guid companyId, Guid id, bool compTrackChanges, bool empTrackChanges)
         {
-            var companyInsatnce = _repository.Company.GetCompany(companyId, compTrackChanges) 
+            var companyInstance = _repository.Company.GetCompany(companyId, compTrackChanges) 
             ?? throw new CompanyNotFoundException(companyId);
 
             var employeeInstance = _repository.Employee.GetEmployee(id, companyId, empTrackChanges) 

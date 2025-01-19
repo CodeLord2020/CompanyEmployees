@@ -9,7 +9,7 @@ namespace Shared.DataTransferObjects{
         public string? Name { get; init; }
 
         [Required(ErrorMessage = "Address is a required field.")]
-        [MaxLength(20, ErrorMessage = "Maximum length for the address is 30 characters.")]
+        [MaxLength(60, ErrorMessage = "Maximum length for the address is 30 characters.")]
         public string? Address { get; init; } 
 
         [Required(ErrorMessage = "Country is a required field.")]

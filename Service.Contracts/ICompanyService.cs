@@ -14,4 +14,5 @@ public interface ICompanyService
     Task UpdateCompanyAsync(Guid companyid, CompanyForUpdateDto companyForUpdate, bool trackChanges);
     Task<(CompanyForUpdateDto companyToPatch, Company companyEntity)> GetCompanyForPatchAsync(
         Guid companyId, bool compTrackChanges);
+    Task SaveChangesForPatch(CompanyForUpdateDto companyDto, Company companyInstance);
 }

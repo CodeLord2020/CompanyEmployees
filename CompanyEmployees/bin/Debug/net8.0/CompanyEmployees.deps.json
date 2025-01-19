@@ -1142,6 +1142,7 @@
       "CompanyEmployees.Presentation/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.JsonPatch": "9.0.1",
+          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "8.0.12",
           "Service.Contracts": "1.0.0"
         },
         "runtime": {

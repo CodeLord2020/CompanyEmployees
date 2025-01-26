@@ -3,6 +3,7 @@ using Contracts;
 using Entities.Exceptions;
 using Entities.Models;
 using Microsoft.EntityFrameworkCore;
+using Shared.RequestFeatures;
 
 namespace Repository
 {
@@ -29,7 +30,8 @@ namespace Repository
           return FindAll(trackChanges).OrderBy(e => e.Name).ToList();
         }
 
-        public async Task<IEnumerable<Employee>> GetAllEmployeesAsync(bool trackChanges)
+        public async Task<IEnumerable<Employee>> GetAllEmployeesAsync(EmployeeParameters employeeParameters,
+        bool trackChanges)
         {
             return await FindAll(trackChanges).OrderBy(e => e.Name).ToListAsync();
         }
@@ -52,9 +54,14 @@ namespace Repository
             FindByCondition(e => e.CompanyId.Equals(companyId), trackChanges).OrderBy(e => e.Name).ToList();
             // [.. FindByCondition(e => e.CompanyId.Equals(companyId), trackChanges).OrderBy(e => e.Name)];
 
-        public async Task<IEnumerable<Employee>> GetEmployeesAsync(Guid companyId, bool trackChanges)
+        public async Task<IEnumerable<Employee>> GetEmployeesAsync(Guid companyId, EmployeeParameters employeeParameters,
+        bool trackChanges)
         {
-            return await FindByCondition(e => e.CompanyId.Equals(companyId), trackChanges).ToListAsync();   
+            return await FindByCondition(e => e.CompanyId.Equals(companyId), trackChanges).
+            OrderBy(e => e.Name).
+            Skip((employeeParameters.pageNumber - 1) * employeeParameters.PageSize).
+            Take(employeeParameters.PageSize).
+            ToListAsync();   
         }
     }
 }

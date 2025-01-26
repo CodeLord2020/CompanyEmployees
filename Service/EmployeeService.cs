@@ -78,14 +78,16 @@ namespace Service
             return (employeeToPatch, employeeInstance);
 
         }
+        
 
-        public async Task<IEnumerable<EmployeeDto>> GetEmployeesAsync(Guid companyId, EmployeeParameters employeeParameters, bool trackChanges)
+        public async Task<(IEnumerable<EmployeeDto> employees,  MetaData metaData)> GetEmployeesAsync(Guid companyId, EmployeeParameters employeeParameters, bool trackChanges)
         {
             var companies = await  _repository.Company.GetCompanyAsync(companyId, trackChanges) 
             ?? throw new CompanyNotFoundException(companyId);
-            var employees = await _repository.Employee.GetEmployeesAsync(companyId, employeeParameters, trackChanges);
-            var employeesDto = _mapper.Map<IEnumerable<EmployeeDto>>(employees);
-            return employeesDto;
+            var employeesWithMetaData = await _repository.Employee.GetEmployeesAsync(companyId, employeeParameters, trackChanges);
+            var employeesDto = _mapper.Map<IEnumerable<EmployeeDto>>(employeesWithMetaData);
+            return (employees: employeesDto, metaData: employeesWithMetaData.MetaData);
+
         }
 
         public async Task SaveChangesForPatchAsync(EmployeeForUpdateDto employeeToPatch, Employee employeeEntity)

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Shared.RequestFeatures
 {
-    public class EmployeeParameters
+    public class EmployeeParameters : RequestParameters
     {
         
     }

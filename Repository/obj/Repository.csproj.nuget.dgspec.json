@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\Repository.csproj": {}
+    "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\Repository.csproj": {}
   },
   "projects": {
     "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Contracts\\Contracts.csproj": {
@@ -127,14 +127,14 @@
         }
       }
     },
-    "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\Repository.csproj": {
+    "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\Repository.csproj",
+        "projectUniqueName": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\Repository.csproj",
+        "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\Macsauce\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\obj\\",
+        "outputPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Macsauce\\AppData\\Roaming\\NuGet\\NuGet.Config"

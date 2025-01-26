@@ -19,7 +19,8 @@ public static class ServiceExtensions
 			options.AddPolicy("CorsPolicy", builder =>
 			builder.AllowAnyOrigin()
 			.AllowAnyMethod()
-			.AllowAnyHeader());
+			.AllowAnyHeader()
+			.WithExposedHeaders("X-Pagination"));
 		});
 	public static IMvcBuilder AddCustomCSVFormatter(this IMvcBuilder builder) =>
 	 builder.AddMvcOptions(config => config.OutputFormatters.Add(new CsvOutputFormatter()));

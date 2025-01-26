@@ -16,3 +16,5 @@ C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Repository\obj\Debug\net8.0\R
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Repository\obj\Debug\net8.0\ref\Repository.dll
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Repository\bin\Debug\net8.0\Contracts.dll
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Repository\bin\Debug\net8.0\Contracts.pdb
+c:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Repository\bin\Debug\net8.0\Shared.dll
+c:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Repository\bin\Debug\net8.0\Shared.pdb

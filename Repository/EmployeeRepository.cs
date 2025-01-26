@@ -33,7 +33,10 @@ namespace Repository
         public async Task<IEnumerable<Employee>> GetAllEmployeesAsync(EmployeeParameters employeeParameters,
         bool trackChanges)
         {
-            return await FindAll(trackChanges).OrderBy(e => e.Name).ToListAsync();
+            return await FindAll(trackChanges).OrderBy(e => e.Name).
+            Skip((employeeParameters.pageNumber - 1) * employeeParameters.PageSize).
+            Take(employeeParameters.PageSize).
+            ToListAsync();
         }
 
         public Employee GetEmployee(Guid employeeId, Guid companyId, bool trackChanges)

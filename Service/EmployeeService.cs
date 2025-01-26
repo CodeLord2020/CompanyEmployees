@@ -5,6 +5,7 @@ using Entities.Exceptions;
 using Entities.Models;
 using Service.Contracts;
 using Shared.DataTransferObjects;
+using Shared.RequestFeatures;
 
 namespace Service
 {
@@ -47,9 +48,9 @@ namespace Service
             await _repository.SaveAsync();
         }
 
-        public async Task<IEnumerable<EmployeeDto>> GetAllEmployeesAsync(bool trackChanges)
+        public async Task<IEnumerable<EmployeeDto>> GetAllEmployeesAsync(EmployeeParameters employeeParameters,bool trackChanges)
         {
-            var allEmployees = await _repository.Employee.GetAllEmployeesAsync(trackChanges);
+            var allEmployees = await _repository.Employee.GetAllEmployeesAsync(employeeParameters, trackChanges);
             var allemployeedto = _mapper.Map<IEnumerable<EmployeeDto>>(allEmployees); 
             return allemployeedto;
         }
@@ -78,11 +79,11 @@ namespace Service
 
         }
 
-        public async Task<IEnumerable<EmployeeDto>> GetEmployeesAsync(Guid companyId, bool trackChanges)
+        public async Task<IEnumerable<EmployeeDto>> GetEmployeesAsync(Guid companyId, EmployeeParameters employeeParameters, bool trackChanges)
         {
             var companies = await  _repository.Company.GetCompanyAsync(companyId, trackChanges) 
             ?? throw new CompanyNotFoundException(companyId);
-            var employees = await _repository.Employee.GetEmployeesAsync(companyId, trackChanges);
+            var employees = await _repository.Employee.GetEmployeesAsync(companyId, employeeParameters, trackChanges);
             var employeesDto = _mapper.Map<IEnumerable<EmployeeDto>>(employees);
             return employeesDto;
         }

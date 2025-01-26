@@ -8,7 +8,7 @@ namespace Service.Contracts
     public interface IEmployeeService
     {
         Task<IEnumerable<EmployeeDto>> GetAllEmployeesAsync(EmployeeParameters employeeParameters, bool trackChanges);
-        Task<IEnumerable<EmployeeDto>> GetEmployeesAsync(Guid companyId, EmployeeParameters employeeParameters, bool trackChanges);
+        Task<(IEnumerable<EmployeeDto>,  MetaData metaData)> GetEmployeesAsync(Guid companyId, EmployeeParameters employeeParameters, bool trackChanges);
         Task<EmployeeDto> GetEmployeeAsync(Guid employeeId, Guid companyId, bool trackChanges);   
         Task<EmployeeDto> CreateEmployeeForCompanyAsync(Guid companyId, EmployeeForCreationDto employee, bool trackChanges);
         Task DeleteEmployeeAsync(Guid employeeId, Guid companyId, bool trackChanges);

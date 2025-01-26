@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Shared\\Shared.csproj": {}
+    "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Shared\\Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Shared\\Shared.csproj": {
+    "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Shared\\Shared.csproj",
+        "projectUniqueName": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Shared\\Shared.csproj",
+        "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Shared\\Shared.csproj",
         "packagesPath": "C:\\Users\\Macsauce\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Shared\\obj\\",
+        "outputPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Macsauce\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,3 +1,4 @@
+using CompanyEmployees.Presentation.ActionFilters;
 using CompanyEmployees.Presentation.ModelBinders;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.JsonPatch;
@@ -53,11 +54,12 @@ namespace CompanyEmployees.Presentation.Controllers
         }
 
         [HttpPost]
+        [ServiceFilter(typeof(ValidationFilterAttribute))]
         public async Task<IActionResult> CreateCompany([FromBody] CompanyForCreationDto company)
         {
-            if (company is null){
-                return BadRequest("CompanyForCreationDto object is null");
-            }
+            // if (company is null){
+            //     return BadRequest("CompanyForCreationDto object is null");
+            // }
             var createdcompany = await _service.CompanyService.CreateCompanyAsync(company);
             return CreatedAtRoute("GetCompanyById", new {id = createdcompany.Id}, createdcompany);
         }

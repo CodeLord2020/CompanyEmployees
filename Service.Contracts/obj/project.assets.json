@@ -48,11 +48,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj",
+      "projectUniqueName": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj",
       "projectName": "Service.Contracts",
-      "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj",
+      "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj",
       "packagesPath": "C:\\Users\\Macsauce\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\obj\\",
+      "outputPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Macsauce\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -67,11 +67,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Entities\\Entities.csproj"
+            "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Entities\\Entities.csproj": {
+              "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Entities\\Entities.csproj"
             },
-            "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Shared\\Shared.csproj": {
-              "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Shared\\Shared.csproj"
+            "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Shared\\Shared.csproj": {
+              "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Shared\\Shared.csproj"
             }
           }
         }

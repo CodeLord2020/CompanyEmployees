@@ -14,3 +14,5 @@ C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Contracts\bin\Debug\net8.0\En
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Contracts\bin\Debug\net8.0\Entities.pdb
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Contracts\obj\Debug\net8.0\Contracts.csproj.AssemblyReference.cache
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Contracts\obj\Debug\net8.0\Contracts.csproj.Up2Date
+c:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Contracts\bin\Debug\net8.0\Shared.dll
+c:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Contracts\bin\Debug\net8.0\Shared.pdb

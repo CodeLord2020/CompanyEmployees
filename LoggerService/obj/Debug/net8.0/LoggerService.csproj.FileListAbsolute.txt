@@ -16,3 +16,5 @@ C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\LoggerService\obj\Debug\net8.
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\LoggerService\obj\Debug\net8.0\LoggerService.sourcelink.json
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\LoggerService\bin\Debug\net8.0\Entities.dll
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\LoggerService\bin\Debug\net8.0\Entities.pdb
+c:\Users\Macsauce\Desktop\Logging\CompanyEmployees\LoggerService\bin\Debug\net8.0\Shared.dll
+c:\Users\Macsauce\Desktop\Logging\CompanyEmployees\LoggerService\bin\Debug\net8.0\Shared.pdb

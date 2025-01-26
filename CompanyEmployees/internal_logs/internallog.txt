@@ -4991,3 +4991,28 @@
 2025-01-19 21:21:20.1211 Trace FileTarget(Name=logfile) has 2 layouts
 2025-01-19 21:21:20.1369 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
 2025-01-19 21:21:20.1369 Info Configuration initialized.
+2025-01-20 08:31:27.2674 Info AppDomain Shutting down. LogFactory closing...
+2025-01-20 08:31:27.2674 Debug Stop watching file-filter 'nlog.config' in directory: c:\Users\Macsauce\Desktop\Logging\CompanyEmployees\CompanyEmployees
+2025-01-20 08:31:27.2771 Trace Flushing all 1 targets...
+2025-01-20 08:31:27.2771 Trace ForEachItemInParallel() 1 items
+2025-01-20 08:31:27.2771 Trace FileTarget(Name=logfile): FlushAsync
+2025-01-20 08:31:27.2771 Trace Continuation invoked: 
+2025-01-20 08:31:27.2771 Trace Parallel task completed. 0 items remaining
+2025-01-20 08:31:27.2771 Debug Flush completed
+2025-01-20 08:31:27.2771 Trace FileTarget(Name=logfile): FlushAsync Done
+2025-01-20 08:31:27.2771 Debug Closing logging configuration...
+2025-01-20 08:31:27.2771 Trace Closing FileTarget(Name=logfile)
+2025-01-20 08:31:27.2771 Debug FileTarget(Name=logfile): Closing...
+2025-01-20 08:31:27.2771 Debug FileTarget(Name=logfile): Closed.
+2025-01-20 08:31:27.2923 Trace Closing .\logs\${shortdate}_logfile.txt
+2025-01-20 08:31:27.2923 Trace Closing Layout Renderer: ${literal}
+2025-01-20 08:31:27.2923 Trace Closing Layout Renderer: ${shortdate}
+2025-01-20 08:31:27.2923 Trace Closing Layout Renderer: ${literal}
+2025-01-20 08:31:27.2923 Trace Closing ${longdate} ${level:uppercase=true} ${message}
+2025-01-20 08:31:27.2923 Trace Closing Layout Renderer: ${longdate}
+2025-01-20 08:31:27.2923 Trace Closing Layout Renderer: ${literal}
+2025-01-20 08:31:27.2923 Trace Closing Layout Renderer: ${level}
+2025-01-20 08:31:27.2923 Trace Closing Layout Renderer: ${literal}
+2025-01-20 08:31:27.2923 Trace Closing Layout Renderer: ${message}
+2025-01-20 08:31:27.2923 Debug Finished closing logging configuration.
+2025-01-20 08:31:27.2923 Info LogFactory has been closed.

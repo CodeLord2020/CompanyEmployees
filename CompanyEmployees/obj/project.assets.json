@@ -1771,7 +1771,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Entities": "1.0.0"
+          "Entities": "1.0.0",
+          "Shared": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Contracts.dll": {}
@@ -1809,8 +1810,8 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Contracts": "1.0.0",
-          "Entities": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "9.0.0"
+          "Microsoft.EntityFrameworkCore": "9.0.0",
+          "Shared": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Repository.dll": {}
@@ -5214,11 +5215,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees\\CompanyEmployees.csproj",
+      "projectUniqueName": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees\\CompanyEmployees.csproj",
       "projectName": "CompanyEmployees",
-      "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees\\CompanyEmployees.csproj",
+      "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees\\CompanyEmployees.csproj",
       "packagesPath": "C:\\Users\\Macsauce\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees\\obj\\",
+      "outputPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Macsauce\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5233,17 +5234,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees.Presentation\\CompanyEmployees.Presentation.csproj": {
-              "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees.Presentation\\CompanyEmployees.Presentation.csproj"
+            "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees.Presentation\\CompanyEmployees.Presentation.csproj": {
+              "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees.Presentation\\CompanyEmployees.Presentation.csproj"
             },
-            "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\LoggerService\\LoggerService.csproj": {
-              "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\LoggerService\\LoggerService.csproj"
+            "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\LoggerService\\LoggerService.csproj": {
+              "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\LoggerService\\LoggerService.csproj"
             },
-            "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\Repository.csproj": {
-              "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\Repository.csproj"
+            "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\Repository.csproj"
             },
-            "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service\\Service.csproj": {
-              "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service\\Service.csproj"
+            "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service\\Service.csproj": {
+              "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service\\Service.csproj"
             }
           }
         }

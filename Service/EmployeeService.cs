@@ -80,8 +80,11 @@ namespace Service
         }
         
 
-        public async Task<(IEnumerable<EmployeeDto> employees,  MetaData metaData)> GetEmployeesAsync(Guid companyId, EmployeeParameters employeeParameters, bool trackChanges)
+        public async Task<(IEnumerable<EmployeeDto> employees,  MetaData metaData)> GetEmployeesAsync(
+            Guid companyId, EmployeeParameters employeeParameters, bool trackChanges)
         {
+            if (!employeeParameters.ValidAgeRange)
+                throw new MaxAgeRangeBadRequestException();
             var companies = await  _repository.Company.GetCompanyAsync(companyId, trackChanges) 
             ?? throw new CompanyNotFoundException(companyId);
             var employeesWithMetaData = await _repository.Employee.GetEmployeesAsync(companyId, employeeParameters, trackChanges);

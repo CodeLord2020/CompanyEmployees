@@ -2,6 +2,8 @@ using Contracts;
 using Entities.Exceptions;
 using Entities.Models;
 using Microsoft.EntityFrameworkCore;
+using Repository.Extensions;
+using Shared.RequestFeatures;
 
 namespace Repository
 {
@@ -24,9 +26,12 @@ namespace Repository
         public IEnumerable<Company> GetAllCompanies(bool trackChanges) =>
            FindAll(trackChanges).OrderBy(c => c.Name).ToList();
 
-        public async Task<IEnumerable<Company>> GetAllCompaniesAsync(bool trackChanges)
+        public async Task<IEnumerable<Company>> GetAllCompaniesAsync(CompanyParameters companyParameters, bool trackChanges)
         {
-            return await FindAll(trackChanges).OrderBy(c => c.Name).ToListAsync();
+            return await FindAll(trackChanges).OrderBy(c => c.Name).
+            Search(companyParameters.SearchTerm).
+            Sort(companyParameters.OrderBy).
+            ToListAsync();
         }
 
         public IEnumerable<Company> GetByIds(IEnumerable<Guid> ids, bool trackChanges) =>

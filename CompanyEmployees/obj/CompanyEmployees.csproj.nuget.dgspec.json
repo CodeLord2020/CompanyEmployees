@@ -107,8 +107,8 @@
               "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\LoggerService\\LoggerService.csproj": {
                 "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\LoggerService\\LoggerService.csproj"
               },
-              "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\Repository.csproj": {
-                "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\Repository.csproj"
+              "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\Repository.csproj"
               },
               "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service\\Service.csproj": {
                 "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service\\Service.csproj"
@@ -364,14 +364,14 @@
         }
       }
     },
-    "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\Repository.csproj": {
+    "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\Repository.csproj",
+        "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\Macsauce\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\obj\\",
+        "outputPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Macsauce\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -413,6 +413,10 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "System.Linq.Dynamic.Core": {
+              "target": "Package",
+              "version": "[1.6.0, )"
             }
           },
           "imports": [

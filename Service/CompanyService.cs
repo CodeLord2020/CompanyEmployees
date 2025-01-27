@@ -8,6 +8,7 @@ using Entities.Exceptions;
 using Entities.Models;
 using Service.Contracts;
 using Shared.DataTransferObjects;
+using Shared.RequestFeatures;
 
 namespace Service
 {
@@ -65,11 +66,11 @@ namespace Service
 
         }
 
-        public async Task<IEnumerable<CompanyDTO>> GetAllCompaniesAsync(bool trackChanges)
+        public async Task<IEnumerable<CompanyDTO>> GetAllCompaniesAsync(CompanyParameters companyParameters, bool trackChanges)
         {
            try {
 
-                var companies = await _repository.Company.GetAllCompaniesAsync(trackChanges);
+                var companies = await _repository.Company.GetAllCompaniesAsync(companyParameters, trackChanges);
                 // var companiesDTO = companies.Select(company => new CompanyDTO(
                 //     company.Id, company.Name ?? "", string.Join(' ', company.Address, company.Country))).ToList();
                 var companiesDTO = _mapper.Map<IEnumerable<CompanyDTO>>(companies);

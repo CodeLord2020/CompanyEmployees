@@ -9,29 +9,28 @@ namespace Repository.Extensions
     {
 
 
-        public static IQueryable<Company> Search(this IQueryable<Company> employees,
+        public static IQueryable<Company> Search(this IQueryable<Company> companies,
             string searchTerm)
             {
                 if (string.IsNullOrWhiteSpace(searchTerm))
-                    return employees;
+                    return companies;
 
                 var lowerCaseTerm = searchTerm.Trim().ToLower();
-                return employees.Where(e => e.Name.ToLower().Contains(lowerCaseTerm));
+                return companies.Where(c => c.Name.ToLower().Contains(lowerCaseTerm) ||  c.Address.ToLower().Contains(lowerCaseTerm));
             }
-       public static IQueryable<Company> Sort(this IQueryable<Company> employees, string
+       public static IQueryable<Company> Sort(this IQueryable<Company> companies, string
             orderByQueryString)
         {
             if (string.IsNullOrWhiteSpace(orderByQueryString))
             {
-                return employees.OrderBy(e => e.Name);
+                return companies.OrderBy(e => e.Name);
             }
             
-            var orderQuery = OrderQueryBuilder.CreateOrderQuery<Employee>(orderByQueryString);
+            var orderQuery = OrderQueryBuilder.CreateOrderQuery<Company>(orderByQueryString);
             if (string.IsNullOrWhiteSpace(orderQuery))
-                    return employees.OrderBy(e => e.Name);
+                    return companies.OrderBy(e => e.Name);
 
-            return employees.OrderBy(orderQuery);
-
+            return companies.OrderBy(orderQuery);
 
         }
             

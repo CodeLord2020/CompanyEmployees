@@ -4,9 +4,8 @@ using Repository;
 using Service;
 using Microsoft.EntityFrameworkCore;
 using Service.Contracts;
-using System.Net;
-using Microsoft.AspNetCore.Diagnostics;
-using Entities.ErrorModel;
+using Microsoft.AspNetCore.Identity;
+using Entities.Models;
 using CompanyEmployees.Formatters;
 
 namespace CompanyEmployees.Extensions;
@@ -42,5 +41,20 @@ public static class ServiceExtensions
 
     public static void ConfigureLoggerService(this IServiceCollection services) =>
 		services.AddSingleton<ILoggerManager, LoggerManager>();
+
+	public static void ConfigureIdentity(this IServiceCollection services) 
+	{
+		var builder = services.AddIdentity<User, IdentityRole>(o =>
+		{
+			o.Password.RequireDigit = true;
+			o.Password.RequireLowercase = false;
+			o.Password.RequireUppercase = false;
+			o.Password.RequireNonAlphanumeric = false;
+			o.Password.RequiredLength = 10;
+			o.User.RequireUniqueEmail = true;
+		})
+		.AddEntityFrameworkStores<RepositoryContext>()
+		.AddDefaultTokenProviders();
+	}
 
 }

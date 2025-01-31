@@ -1,7 +1,11 @@
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Repository\bin\Debug\net8.0\Repository.deps.json
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Repository\bin\Debug\net8.0\Repository.dll
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Repository\bin\Debug\net8.0\Repository.pdb
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Repository\bin\Debug\net8.0\Contracts.dll
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Repository\bin\Debug\net8.0\Entities.dll
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Repository\bin\Debug\net8.0\Shared.dll
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Repository\bin\Debug\net8.0\Contracts.pdb
+C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Repository\bin\Debug\net8.0\Shared.pdb
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Repository\bin\Debug\net8.0\Entities.pdb
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Repository\obj\Debug\net8.0\Repository.csproj.AssemblyReference.cache
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Repository\obj\Debug\net8.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
@@ -14,7 +18,3 @@ C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Repository\obj\Debug\net8.0\R
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Repository\obj\Debug\net8.0\refint\Repository.dll
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Repository\obj\Debug\net8.0\Repository.pdb
 C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Repository\obj\Debug\net8.0\ref\Repository.dll
-C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Repository\bin\Debug\net8.0\Contracts.dll
-C:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Repository\bin\Debug\net8.0\Contracts.pdb
-c:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Repository\bin\Debug\net8.0\Shared.dll
-c:\Users\Macsauce\Desktop\Logging\CompanyEmployees\Repository\bin\Debug\net8.0\Shared.pdb

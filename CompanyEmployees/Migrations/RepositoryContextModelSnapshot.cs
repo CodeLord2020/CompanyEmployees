@@ -221,13 +221,13 @@ namespace CompanyEmployees.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "024801e8-f7c0-40b5-8c6b-6779a4342186",
+                            Id = "69a965ae-7fa8-4ede-aaa3-fa27d643d139",
                             Name = "Manager",
                             NormalizedName = "MANAGER"
                         },
                         new
                         {
-                            Id = "c44c601e-3fb8-4de0-a0a1-2354e5562b10",
+                            Id = "80789837-6b00-4e86-9888-b6ca841fd39b",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         });

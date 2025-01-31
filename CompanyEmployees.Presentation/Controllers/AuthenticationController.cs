@@ -20,7 +20,8 @@ namespace CompanyEmployees.Presentation.Controllers
 
         [HttpPost]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
-        public async Task<IActionResult> RegisterUser(UserForRegistrationDto userForRegistrationDto)
+        public async Task<IActionResult> RegisterUser([FromBody]
+        UserForRegistrationDto userForRegistrationDto)
         {
             var result = await _service.AuthenticationService.RegisterUser(userForRegistrationDto);
             if (!result.Succeeded)

@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees\\CompanyEmployees.csproj": {}
+    "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees\\CompanyEmployees.csproj": {}
   },
   "projects": {
     "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees.Presentation\\CompanyEmployees.Presentation.csproj": {
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj": {
-                "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj"
+              "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj"
               }
             }
           }
@@ -49,11 +49,11 @@
           "dependencies": {
             "Microsoft.AspNetCore.JsonPatch": {
               "target": "Package",
-              "version": "[9.0.1, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
-              "version": "[8.0.*, )"
+              "version": "[8.0.1, )"
             }
           },
           "imports": [
@@ -79,14 +79,14 @@
         }
       }
     },
-    "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees\\CompanyEmployees.csproj": {
+    "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees\\CompanyEmployees.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees\\CompanyEmployees.csproj",
+        "projectUniqueName": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees\\CompanyEmployees.csproj",
         "projectName": "CompanyEmployees",
-        "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees\\CompanyEmployees.csproj",
+        "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees\\CompanyEmployees.csproj",
         "packagesPath": "C:\\Users\\Macsauce\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees\\obj\\",
+        "outputPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Macsauce\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -104,8 +104,8 @@
               "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees.Presentation\\CompanyEmployees.Presentation.csproj": {
                 "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\CompanyEmployees.Presentation\\CompanyEmployees.Presentation.csproj"
               },
-              "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\LoggerService\\LoggerService.csproj": {
-                "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\LoggerService\\LoggerService.csproj"
+              "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\LoggerService\\LoggerService.csproj": {
+                "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\LoggerService\\LoggerService.csproj"
               },
               "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\Repository.csproj": {
                 "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Repository\\Repository.csproj"
@@ -131,23 +131,19 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[8.0.*, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.1, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.1, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.OpenApi": {
               "target": "Package",
@@ -177,14 +173,14 @@
         }
       }
     },
-    "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Contracts\\Contracts.csproj": {
+    "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Contracts\\Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Contracts\\Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Contracts\\Contracts.csproj",
         "projectName": "Contracts",
-        "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Contracts\\Contracts.csproj",
+        "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Contracts\\Contracts.csproj",
         "packagesPath": "C:\\Users\\Macsauce\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Contracts\\obj\\",
+        "outputPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Macsauce\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -306,14 +302,14 @@
         }
       }
     },
-    "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\LoggerService\\LoggerService.csproj": {
+    "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\LoggerService\\LoggerService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\LoggerService\\LoggerService.csproj",
+        "projectUniqueName": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\LoggerService\\LoggerService.csproj",
         "projectName": "LoggerService",
-        "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\LoggerService\\LoggerService.csproj",
+        "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\LoggerService\\LoggerService.csproj",
         "packagesPath": "C:\\Users\\Macsauce\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\LoggerService\\obj\\",
+        "outputPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\LoggerService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Macsauce\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -328,8 +324,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Contracts\\Contracts.csproj": {
-                "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Contracts\\Contracts.csproj"
+              "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Contracts\\Contracts.csproj"
               }
             }
           }
@@ -396,8 +392,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Contracts\\Contracts.csproj": {
-                "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Contracts\\Contracts.csproj"
+              "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Contracts\\Contracts.csproj"
               },
               "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Shared\\Shared.csproj": {
                 "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Shared\\Shared.csproj"
@@ -422,7 +418,7 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[8.0.1, )"
             },
             "System.Linq.Dynamic.Core": {
               "target": "Package",
@@ -449,14 +445,14 @@
         }
       }
     },
-    "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj": {
+    "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj",
         "projectName": "Service.Contracts",
-        "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj",
+        "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj",
         "packagesPath": "C:\\Users\\Macsauce\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\obj\\",
+        "outputPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Macsauce\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -536,11 +532,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Contracts\\Contracts.csproj": {
-                "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Contracts\\Contracts.csproj"
+              "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Contracts\\Contracts.csproj"
               },
-              "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj": {
-                "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj"
+              "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj"
               }
             }
           }

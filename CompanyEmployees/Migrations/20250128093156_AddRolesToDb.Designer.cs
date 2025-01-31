@@ -12,8 +12,8 @@ using Repository;
 namespace CompanyEmployees.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    [Migration("20250131100849_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20250128093156_AddRolesToDb")]
+    partial class AddRolesToDb
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -224,13 +224,13 @@ namespace CompanyEmployees.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "69a965ae-7fa8-4ede-aaa3-fa27d643d139",
+                            Id = "024801e8-f7c0-40b5-8c6b-6779a4342186",
                             Name = "Manager",
                             NormalizedName = "MANAGER"
                         },
                         new
                         {
-                            Id = "80789837-6b00-4e86-9888-b6ca841fd39b",
+                            Id = "c44c601e-3fb8-4de0-a0a1-2354e5562b10",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         });

@@ -23,8 +23,8 @@ namespace CompanyEmployees.Presentation.Controllers
         public async Task<IActionResult> RegisterUser([FromBody]
         UserForRegistrationDto userForRegistrationDto)
         {
-            // if (userForRegistrationDto is null)
-            //     return BadRequest("userForRegistrationDto is null");
+            if (userForRegistrationDto is null)
+                return BadRequest("userForRegistrationDto is null");
 
             var result = await _service.AuthenticationService.RegisterUser(userForRegistrationDto);
             

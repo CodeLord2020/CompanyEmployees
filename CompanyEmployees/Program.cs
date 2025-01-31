@@ -23,6 +23,8 @@ builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddScoped<ValidationFilterAttribute>();
 builder.Services.AddAuthentication();
 builder.Services.ConfigureIdentity();
+builder.Services.ConfigureJWT(builder.Configuration);
+
 builder.Services.AddControllers(config =>
 {
     config.RespectBrowserAcceptHeader = true;

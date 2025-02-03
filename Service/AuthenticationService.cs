@@ -7,7 +7,6 @@ using Service.Contracts;
 using Shared.DataTransferObjects;
 using System.Text;
 using System.Security.Claims;
-
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
 

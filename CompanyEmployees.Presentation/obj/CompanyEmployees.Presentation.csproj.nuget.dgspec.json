@@ -79,14 +79,14 @@
         }
       }
     },
-    "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Entities\\Entities.csproj": {
+    "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\Macsauce\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Macsauce\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -165,8 +165,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Entities\\Entities.csproj": {
-                "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Entities\\Entities.csproj"
+              "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Entities\\Entities.csproj"
               },
               "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Shared\\Shared.csproj": {
                 "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Shared\\Shared.csproj"

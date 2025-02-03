@@ -33,9 +33,14 @@ namespace Service
             
         }
 
-        public Task<string> CreateToken()
+        public async Task<string> CreateToken()
         {
-            throw new NotImplementedException();
+            var signingCredentials = GetSigningCredentials();
+            var claims = await GetClaims();
+            var tokenOptions = GenerateTokenOptions(signingCredentials, claims);
+
+            return new JwtSecurityTokenHandler().WriteToken(tokenOptions);
+
         }
 
         public async Task<IdentityResult> RegisterUser(UserForRegistrationDto userForRegistration)

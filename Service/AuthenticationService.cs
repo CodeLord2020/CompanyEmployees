@@ -18,6 +18,7 @@ namespace Service
         private readonly IMapper _mapper;
         private readonly UserManager<User> _userManager;
         private readonly IConfiguration _configuration;
+        private User? _user;
 
         public AuthenticationService(
             ILoggerManager logger, IMapper mapper,
@@ -29,7 +30,14 @@ namespace Service
             _userManager = userManager;
             _configuration = configuration;
             
+            
         }
+
+        public Task<string> CreateToken()
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<IdentityResult> RegisterUser(UserForRegistrationDto userForRegistration)
         {
             var user = _mapper.Map<User>(userForRegistration);
@@ -40,6 +48,18 @@ namespace Service
 
             return result;
 
+        }
+
+        public async Task<bool> ValidateUser(UserForAuthenticationDto userForAuthenticationDto)
+        {
+            _user = await _userManager.FindByNameAsync(userForAuthenticationDto.UserName);
+            var result = (_user != null && await _userManager.CheckPasswordAsync(_user, userForAuthenticationDto.Password));
+            
+            if (!result)
+            {
+                _logger.LogWarn($"{nameof(ValidateUser)}: Authentication failed. Wrong username or password. ");
+            }
+            return result;
         }
     }
 }

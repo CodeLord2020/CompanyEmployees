@@ -1044,11 +1044,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Contracts\\Contracts.csproj": {
-              "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Contracts\\Contracts.csproj"
+            "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Contracts\\Contracts.csproj": {
+              "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Contracts\\Contracts.csproj"
             },
-            "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj": {
-              "projectPath": "c:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj"
+            "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj": {
+              "projectPath": "C:\\Users\\Macsauce\\Desktop\\Logging\\CompanyEmployees\\Service.Contracts\\Service.Contracts.csproj"
             }
           }
         }
